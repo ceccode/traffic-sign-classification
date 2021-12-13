@@ -55,6 +55,32 @@ Labels:
 * Predict
 * Covert model in tslite from h5
 
+## Local deploy
+
+Python required. For more see: https://packaging.python.org/tutorials/installing-packages/.
+
+### Install & run
+
+in /src dir:
+
+```
+pip install pipenv
+pipenv install
+pipenv shell
+python predict.py
+```
+
+### Test
+
+```
+curl --location --request POST 'http://localhost:9696/predict' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "url": "http://clipart-library.com/images/gieERjykT.jpg"
+}'
+```
+
+
 ## Deploy
 
 ### Docker

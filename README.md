@@ -55,7 +55,7 @@ Labels:
 * Predict
 * Covert model in tslite from h5
 
-## Local deploy
+## Local deploy
 
 Python required. For more see: https://packaging.python.org/tutorials/installing-packages/.
 
@@ -112,7 +112,7 @@ heroku container:login
 
 heroku create your-app-name
 
-#### Push docker image to Heroku
+#### Push docker image to Heroku
 
 heroku container:push web -a your-app-name
 
